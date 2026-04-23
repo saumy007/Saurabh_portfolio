@@ -183,6 +183,47 @@
     margin-bottom: 3rem;
   }
 
+  .profile-img {
+    width: 240px; height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 2.4rem;
+    box-shadow: 0 8px 32px rgba(15,25,35,.12);
+    border: 2px solid var(--warm);
+  }
+
+  .connect-section {
+    margin-top: 4rem; padding-top: 3rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .connect-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-weight: 700;
+    color: var(--forest); margin-bottom: 1.8rem;
+  }
+
+  .connect-links {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+
+  .connect-link {
+    font-family: 'DM Mono', monospace;
+    font-size: .9rem; letter-spacing: .05em;
+    color: var(--forest);
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    background: var(--sand);
+    border-left: 3px solid var(--gold);
+    transition: all .2s;
+  }
+
+  .connect-link:hover {
+    background: var(--warm);
+    color: var(--ink);
+    transform: translateX(4px);
+  }
+
   /* ── SECTIONS ───────────────────────────────────── */
   section { padding: 7rem 0; }
   .container { max-width: 1160px; margin: 0 auto; padding: 0 4rem; }
@@ -488,6 +529,7 @@
     #hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 7rem 2rem 3rem; }
     .hero-right { padding: 3rem 2rem 5rem; }
+    .profile-img { width: 200px; height: 200px; }
     .hero-stats { grid-template-columns: 1fr 1fr; }
 
     .container { padding: 0 2rem; }
@@ -523,10 +565,10 @@
 <!-- ── HERO ─────────────────────────────────────────────── -->
 <section id="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Portfolio — Government &amp; Public Sector</div>
+    <div class="hero-eyebrow">Government &amp; Public Sector</div>
     <h1 class="hero-name">
       Saurabh<br>Sharma
-      <em>Public Services Consultant &amp; Sales</em>
+      <em>Public Services Consultant &amp;s Sales</em>
     </h1>
     <div class="hero-rule"></div>
     <p class="hero-desc">
@@ -541,8 +583,9 @@
   </div>
 
   <div class="hero-right">
+    <img src="saurabh image.jpeg" alt="Saurabh Sharma" class="profile-img">
     <p class="hero-pull">
-      "Building partnerships that move policy into practice — from World Bank programs to village entrepreneurs."
+      "Building partnerships that move policy into practice — from World Bank programs to Rural Indian entrepreneurs."
     </p>
     <div class="hero-stats">
       <div class="stat-card">
@@ -593,6 +636,14 @@
           He holds a <strong>Post Graduate Diploma in Development Studies</strong> from the
           Entrepreneurship Development Institute of India (EDII), Ahmedabad.
         </p>
+
+        <div class="connect-section">
+          <h3 class="connect-heading">Connect with Me</h3>
+          <div class="connect-links">
+            <a href="mailto:saurabh.sharma72002@gmail.com" class="connect-link">✉ saurabh.sharma72002@gmail.com</a>
+            <a href="https://linkedin.com/in/saurabhsharma3" target="_blank" class="connect-link">→ linkedin.com/in/saurabhsharma3</a>
+          </div>
+        </div>
       </div>
 
       <div class="skills-panel fade-in">
